@@ -58,3 +58,11 @@ fmt.Println(i)
 往一个已经被close的channel中继续发送数据会导致run-time panic。
 
 往nil channel中发送数据会一致被阻塞着。
+
+注意
+
+``` md
+应该在生产者的地方关闭channel，如果在消费者的地方关闭，容易引起panic
+
+在一个已关闭 channel 上执行接收操作(<-ch)总是能够立即返回，返回值是对应类型的零值。
+````
