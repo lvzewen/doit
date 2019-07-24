@@ -2,7 +2,7 @@
 
 inode是一个重要概念，是理解Unix/Linux文件系统和硬盘储存的基础。
 
-## inode是什么?
+## inode是什么
 
 理解inode，要从文件储存说起。
 
